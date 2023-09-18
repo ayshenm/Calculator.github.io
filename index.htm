@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div><input id="display" type="text" /></div>
+      <div>
+        <button id="remove" onclick="remove()">C</button>
+        <button onclick="clearDisplay()">🢤</button>
+        <button onclick="yaz('**')">^</button>
+        <button onclick="yaz('*')">✕</button>
+      </div>
+      <div>
+        <button onclick="yaz('7')">7</button>
+        <button onclick="yaz('8')">8</button>
+        <button onclick="yaz('9')">9</button>
+        <button onclick="yaz('/')">÷</button>
+      </div>
+      <div>
+        <button onclick="yaz('4')">4</button>
+        <button onclick="yaz('5')">5</button>
+        <button onclick="yaz('6')">6</button>
+        <button onclick="yaz('-')">-</button>
+      </div>
+      <div>
+        <button onclick="yaz('1')">1</button>
+        <button onclick="yaz('2')">2</button>
+        <button onclick="yaz('3')">3</button>
+        <button onclick="yaz('+')">+</button>
+      </div>
+      <div>
+        <button onclick="yaz('.')">.</button>
+        <button onclick="yaz('0')">0</button>
+        <button id="eq" onclick="hesabla()">=</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
